@@ -1343,6 +1343,9 @@
          return $calEventList;
 
       },
+      addEvent: function(){
+      	return this._renderEvent.apply(this, arguments);
+      },
 
       _adjustOverlappingEvents : function($weekDay) {
          var self = this;
